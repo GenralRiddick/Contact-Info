@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Details</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+		}
+		h1 {
+			color: #333;
+			text-align: center;
+			margin-top: 50px;
+		}
+		.contact-info {
+			background-color: #fff;
+			border-radius: 5px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+			width: 400px;
+			margin: 50px auto;
+			padding: 30px;
+			text-align: center;
+		}
+		.contact-info p {
+			margin: 0;
+			padding: 10px 0;
+			font-size: 18px;
+			color: #333;
+			line-height: 1.5;
+		}
+		.button {
+			display: inline-block;
+			background-color: #007bff;
+			color: #fff;
+			padding: 10px 20px;
+			border-radius: 5px;
+			text-decoration: none;
+			margin: 10px;
+			font-size: 16px;
+			transition: background-color 0.3s ease;
+		}
+		.button:hover {
+			background-color: #0056b3;
+		}
+	</style>
+</head>
+<body>
+	<h1>Contact Details</h1>
+	<div class="contact-info">
+		<p>Name: Dr Gayathri Gopi</p>
+		<p>Phone: <a href="tel:+919841697444">+91 98416 97444</a></p>
+		<p>Instagram ID: <a href="https://www.instagram.com/Dr.GayathrisHairTransplant/" target="_blank">@Dr.GayathrisHairTransplant</a></p>
+		<a href="mailto:dr.gayathrihtsurgeon@gmail.com" class="button">Send Email</a>
+		<a href="tel:+919841697444" class="button">Call Now</a>
+		<a href="https://www.instagram.com/Dr.GayathrisHairTransplant/" target="_blank" class="button">Follow on Instagram</a>
+	</div>
+	<script>
+		const buttons = document.querySelectorAll('.button');
+		buttons.forEach(button => {
+			button.addEventListener('click', () => {
+				alert('Button clicked!');
+			});
+		});
+	</script>
+</body>
+</html>
+
